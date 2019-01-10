@@ -24,40 +24,30 @@
     <br>
     <h1>Form Contact</h1>
     <hr>
-    <table>
-    <form class="" action="mailto:stevenwiyadi@live.com" method="post">
-      <tbody>
-        <tr>
-          <td>
-      <label>Your Name :</label>
-          </td>
-          <td>
-            <input type="text" name="yourName" value=""><br>
-          </td>
-        </tr>
-        <tr>
-          <td>
-      <label>Your Email :</label>
-          </td>
-          <td>
-      <input type="email" name="yourMessage" value=""><br>
-          </td>
-        </tr>
-        <tr>
-          <td>
-      <label>Your Message :</label>
-      </td>
-          <td>
-            <textarea name="yourMessage" rows="5" cols="25"></textarea>
-      <br>
-      </td>
-          </tr>
-      <input type="submit" name="">
-    
-      </tbody>
+    <form action="mailto:stevenwiyadi@live.com" method="post">
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Your Name : </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPassword3" placeholder="your Name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Your Email :</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="your Email @">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Your Message :</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
     </form>
-      </table>
-    <br>
 
     <footer style="text-align:center; padding-top: 20px; padding-bottom: 5px;" class="white-section" id="footer">
       <a href="#"><i class="social-icon fab fa-twitter"></i></a>
